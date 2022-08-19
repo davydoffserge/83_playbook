@@ -217,6 +217,19 @@ root@ubu-7:/etc/ansible/roles/kibana#
 
 ```bash
 ---
+- hosts: all
+  roles:
+  - java
+- hosts: elasticsearch
+  roles:
+  - elastic
+- hosts: kibana
+  roles:
+  - kibana
+```
+
+```bash
+---
   - src: git@github.com:davydoffserge/kibana-role.git
     scm: git
     version: "v1.1"
@@ -231,3 +244,8 @@ root@ubu-7:/etc/ansible/roles/kibana#
     name: java
 ```
 
+Ссылки:
+
+[https://github.com/davydoffserge/kibana-role](https://github.com/davydoffserge/kibana-role)
+
+[https://github.com/davydoffserge/elastic-role](https://github.com/davydoffserge/elastic-role)

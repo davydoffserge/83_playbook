@@ -213,5 +213,21 @@ root@ubu-7:/etc/ansible/roles/kibana#
 
 9. Переработайте playbook на использование roles.
 10. Выложите playbook в репозиторий.
-11. В ответ приведите ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook.
+11. В ответ приведите ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook
+
+```bash
+---
+  - src: git@github.com:davydoffserge/kibana-role.git
+    scm: git
+    version: "v1.1"
+    name: kibana 
+  - src: git@github.com:davydoffserge/elastic-role.git
+    scm: git
+    version: "v1"
+    name: elastic
+  - src: git@github.com:davydoffserge/java-role.git
+    scm: git
+    version: "v1"
+    name: java
+```
 

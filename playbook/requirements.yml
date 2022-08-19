@@ -1,0 +1,13 @@
+---
+  - src: git@github.com:davydoffserge/kibana-role.git
+    scm: git
+    version: "v1.1"
+    name: kibana 
+  - src: git@github.com:davydoffserge/elastic-role.git
+    scm: git
+    version: "v1"
+    name: elastic
+  - src: git@github.com:davydoffserge/java-role.git
+    scm: git
+    version: "v1"
+    name: java
